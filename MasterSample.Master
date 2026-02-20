@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterSample.master.cs" Inherits="Master_Pages.MasterSample" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="CSS/MasterCSS.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <h1>Welcome to the Master Sample Page</h1><br />
+                <asp:Label ID="Greatinglbl" runat="server">Return Greatings</asp:Label>
+            </div>
+            <div class="menu">
+                <a href="Web Pages/Time.aspx">Time</a>
+            </div>
+            <div class="aboutus">
+                <h1>We are feature of the Web</h1><br />
+                <p>We do work on platform like <span>WINDOWS, WEB, ANDROID, LINUX</span> and many more.</p><br />
+                <a href="gmail.google.com">Contact US</a>
+            </div>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            All rights are reaserve to the omkarrathod123
+        </div>
+    </form>
+</body>
+</html>
